@@ -111,6 +111,11 @@ th, td {
     background-color: #F7F7F7;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 footer {
     color: #255c21;
     background-color: #77a375;

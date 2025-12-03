@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Калькулятор стоимости услуг</title>
+</head>
+<body>
+    <h1>Калькулятор стоимости услуг</h1>
+
+    <form>
+        <div>
+            <label>Выберите услугу:</label><br>
+            <select name="products">
+                <option value="v1">Обучение Python - 2000 руб. одно занятие</option>
+                <option value="v2">Обучение иностранному языку - 1500 руб. одно занятие</option>
+                <option value="v3">Обучение JavaScript - 1000 руб. одно занятие</option>
+            </select>
+        </div>
+        
+        <div>
+            <label>Количество:</label><br>
+            <input name="quantity" type="number">
+        </div>
+
+        <div id="choice_lang" class="d-none mt-2">
+            <label>
+                Язык:<br/>
+                <select name="select2">
+                    <option value="l1">Английский язык</option>
+                    <option value="l2">Французский язык (+250 рублей)</option>
+                    <option value="l3">Китайский язык (+500 рублей)</option>
+                </select>
+            </label><br/>
+        </div>
+        <div id="choice_check" class="d-none mt-2">
+            <label>
+                <input type="checkbox" name="check2"/>
+                    Основы HTML и CSS (+700 рублей)
+            </label><br/>
+        </div>
+        
+        <br>
+    </form>
+
+    <div id="result"></div>
+
+    <script src="js/calculator.js"></script>
+</body>
+</html>

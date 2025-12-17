@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    flex-direction: column;
+    color: #000000;
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+header {
+    color: #ca9524;
+    background-color: #49230a;
+    text-align: center;
+}
+p{
+    color: #ca9524;
+}
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:0; 
+}
+.cover {
+    max-width: 80%;
+    margin: 0 auto;
+}
+.cover img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+footer {
+    color: #ca9524;
+    background-color: #49230a;
+    margin-top: auto; 
+}
+.slick-prev:before, 
+.slick-next:before {
+    color: #49230a;
+    font-size: 25px;
+}
+
+
+@media screen and (min-width: 720px){
+    .cover {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
